@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .main {
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 39px;
+        }
+
+        ::placeholder {
+            color: #1b1b1b;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            ::placeholder {
+                color: #e5e5e5;
+            }
+        }
+    </style>
+    <title>Muhamad Frendi Diyon Ardiansah</title>
+</head>
+
+
+<body class="bg-light .bg-gradient">
+    <div id="tsparticles"></div>
+    <div style="display: inline-block;" class="d-grid gap-2 col-9 mx-auto main">
+        <img src="image/FOTOPRIBADI.jpg"
+            style="border-radius: 29%; height: 119px; margin-right: auto; margin-left: auto;">
+        <h3 style="text-align: center;">Muhamad Frendi Diyon Ardiansah</h3>
+        <a class="btn btn-primary" href="https://wa.me/6281615341867">No Telepon/Whatsapp</a>
+        <a class="btn btn-primary" href="mailto: frendidyon1999@gmail.com">Email</a>
+        <a class="btn btn-primary"
+            href="https://www.linkedin.com/in/muhamad-frendi-diyon-ardiansah-3906b51b1/">Linkedin</a>
+        <a class="btn btn-primary" href="https://github.com/Diyon7">Github</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.43.1/tsparticles.min.js"></script>
+    <script>
+
+        tsParticles.load("tsparticles", {
+            fps_limit: 60,
+            interactivity: {
+                events: {
+                    onclick: { enable: true, mode: "push" },
+                    onhover: {
+                        enable: true,
+                        mode: "attract",
+                        parallax: { enable: false, force: 60, smooth: 10 }
+                    },
+                    resize: true
+                },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                line_linked: {
+                    color: "#0000",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 },
+                    bounce: false,
+                    direction: "none",
+                    enable: true,
+                    out_mode: "out",
+                    random: false,
+                    speed: 2,
+                    straight: false
+                },
+                number: { density: { enable: true, value_area: 800 }, value: 80 },
+                opacity: {
+                    anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
+                    random: false,
+                    value: 0.5
+                },
+                shape: {
+                    character: {
+                        fill: false,
+                        font: "Verdana",
+                        style: "",
+                        value: "*",
+                        weight: "400"
+                    },
+                    image: {
+                        height: 100,
+                        replace_color: true,
+                        src: "images/github.svg",
+                        width: 100
+                    },
+                    polygon: { nb_sides: 5 },
+                    stroke: { color: "#000000", width: 0 },
+                    type: "circle"
+                },
+                size: {
+                    anim: { enable: false, size_min: 0.1, speed: 40, sync: false },
+                    random: true,
+                    value: 5
+                }
+            },
+            polygon: {
+                draw: { enable: false, lineColor: "#ffffff", lineWidth: 0.5 },
+                move: { radius: 10 },
+                scale: 1,
+                type: "none",
+                url: ""
+            },
+            retina_detect: true
+        });
+
+    </script>
+</body>
+
+</html>
